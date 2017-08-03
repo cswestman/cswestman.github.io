@@ -1,0 +1,215 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	line-height: 1.6;
+	color: #000;
+	position: relative;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+a {
+	color: #000;
+}
+
+.main-header a {
+	text-decoration: none;
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 2em;
+	margin: 0;
+	margin-left: 10px;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.contact-info a,
+.main-nav a {
+	font-size: .95em;
+	font-weight: bold;
+	color: #000;
+	text-transform: uppercase;
+}
+
+
+.contact-info a:hover {
+	color: #e04a05;
+}
+
+.main-nav a:hover {
+	color: #e04a05;
+}
+
+
+.name:hover {
+	color: #e04a05;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.contact-info a {
+  display: block;
+
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 10px 40px 0 10px;
+}
+
+.contact-info li a{
+	text-decoration: none;
+	padding-left: 35px;
+}
+
+.contact-info li.phone a{
+  background-image: url('../main_img/phone.png');
+  background-size: 30px;
+}
+
+.contact-info li.mail a{
+  background-image: url('../main_img/mail.png');
+  background-size: 30px;
+}
+
+
+.contact-info li.twitter a{
+  background-image: url('../main_img/twitter.png');
+  background-size: 30px;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.main-footer {
+	text-align: center;
+	font-size: 1.4em;
+	background: linear-gradient(0deg, #000 -30%, transparent 90%);
+	padding: 1.8em 0;
+	margin-top: 30px;
+	color: #e04a05;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	body {
+		padding-top: 68px;
+	}
+
+
+	.main-header {
+		position: fixed;
+		background: #fff;
+		box-shadow: 0 10px 10px rgba(0,0,0, .4);
+		width: 100%;
+		top: 0;
+		z-index: 10000;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.name {
+		float: left;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	.container2 {
+		margin: 100px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.content {
+		padding: 30px 20px;
+		flex:2;
+		background-color: rgba(200,200,200, .5);
+		border-radius: 15px;
+		color: #000;
+		box-shadow: inset 0px 5px 50px rgba(0, 0, 0, .3),
+					0px 10px 100px rgba(0, 0, 0, .9);
+	}
+
+	.contact {
+		margin-left: 50px;
+		flex:1;
+	}
+
+	.contact li{
+		margin-top: 30px;
+	}
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 1025px) {
+
+	.container2 {
+		width: 80%;
+		max-width: 1150px;
+		margin-top: 200px;
+		margin-bottom: 200px;
+	}
+
+}
