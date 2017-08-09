@@ -2,29 +2,78 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Chris Westman | Designer | Developer</title>
-	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="style/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width">
+	<meta name="author" content="Chris Westman">
+	<title>Chris Westman | Developer</title>
+	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Oxygen" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="script/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
 </head>
 <body>
-	<header class="main-header">
-		<h1 class="name">Chris Westman | Developer</h1>
-		<div class="container clearfix">
-	    	<ul class="main-nav">
-	    		<li><a href="index.html">Home</a></li>
-				<li><a href="layout_website/layout.html">About</a></li>
-	          	<li><a href="lake_tahoe_school_sample/lake_tahoe_sample.html">Sample</a></l>
-	          	<li><a href="contact/contact.html">Contact</a></li>
-		    </ul>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1><span class="highlight">Chris Westman</span> | Deveopler</h1>
+			</div>
+				
+				<span class="menu-trigger">MENU</span>
+
+				<nav class="nav-menu">
+					<ul class="clearfix">
+						<li class="current"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="design.html">Design</a></li>
+					</ul>
+				</nav>
 		</div>
 	</header>
-		<div class="container2 clearfix">
-			<img src="main_img/OctopusSmoke.jpg" alt="Octopus">
+
+	<section id="showcase">
+	<div class="container">
+		<h1>Welcome to my Site</h1>
+		<p>Feel free to look around. You can visit any of the links above or below to know more about me. Have a question? Visit my contact page and shoot me a message! 
+		</p>
+	</div>
+	</section>
+
+	<section id="newsletter">
+		<div class="container">
+			<h1>Or send me your email!</h1>
+			<form>
+				<input type="email" placeholder="Enter Email...">
+				<button type="submit" class="button1">Submit</button>
+			</form>
 		</div>
-	<footer class="main-footer">
-		<span>&copy;Chris Westman 2017</span>
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<div class="box">
+				<a href="https://twitter.com/CScottWestman"><img src="img/BlogLogo.png"></a>
+				<h3>Blog</h3>
+				<p>I'm not much of a blogger, but this link will take you to my Twitter page. You can leave me a message, or just check out the subjects and people I follow! 
+			</p>
+			</div>
+			<div class="box">
+				<a href="about.html"><img src="img/ResumeLogo.png"></a>
+				<h3>Resume</h3>
+				<p>Check out my experience and skills on my about page, or you can click the icon above to get there faster. I can do many things that are not at all related! 
+			</p>
+			</div>
+			<div class="box">
+				<a href="http://cswestman.deviantart.com/gallery/"><img src="img/DeviantArtLogo.png"></a>
+				<h3>Deviant Art</h3>
+				<p>Click on the icon above to visit my Deviant Art page. It's filled with my design and illustration art work. If you like what you see, leave a comment in the gallery!
+			</p>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>Westman, Copyright &copy; 2017</p>
 	</footer>
+
 </body>
 </html>
