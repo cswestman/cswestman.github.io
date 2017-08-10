@@ -7,6 +7,8 @@ body {
 
 #branding h1,
 #showcase h1,
+#showcase2 h1,
+#showcase3 h1,
 #design h1,
 #graphic h1,
 #illustration h1,
@@ -103,10 +105,40 @@ header a:hover {
 				rgba(0,0,0, .45),
 				rgba(0,0,0, .45)
 				),
-				url('../img/GoldHeaderOnBlack.png') no-repeat center -350px;
+				url('../img/GoldHeaderOnBlack.jpg') no-repeat center -350px;
 	background-attachment: fixed;
 	text-align: center;
 	color: #fff;
+}
+
+#showcase2 {
+	min-height: 400px;
+	background: linear-gradient(
+				rgba(0,0,0, .45),
+				rgba(0,0,0, .45)
+				),
+				url('../img/hero.jpg') no-repeat center -450px;
+	background-attachment: fixed;
+	text-align: center;
+	color: #fff;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#showcase3 {
+	min-height: 400px;
+	background: linear-gradient(
+				rgba(0,0,0, .45),
+				rgba(0,0,0, .45)
+				),
+				url('../img/OneEye.jpg') no-repeat center center;
+	background-attachment: fixed;
+	text-align: center;
+	color: #fff;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 #design {
@@ -130,7 +162,7 @@ header a:hover {
 				rgba(0,0,0, .45),
 				rgba(0,0,0, .45)
 				),
-				url('../img/GoldHeaderOnBlack.png') no-repeat center center;
+				url('../img/GoldHeaderOnBlack.jpg') no-repeat center center;
 	background-attachment: fixed;
 	text-align: center;
 	color: #fff;
@@ -154,21 +186,27 @@ header a:hover {
 }
 
 #deviant {
-	min-height: 650px;
+	min-height: 600px;
 	background: linear-gradient(
 				rgba(0,0,0, .45),
 				rgba(0,0,0, .45)
 				),
-				url('../alt_img/OctopusGold.png') no-repeat center -350px;
+				url('../alt_img/OctopusGold.jpg') no-repeat center -350px;
 	background-attachment: fixed;
 	text-align: center;
 	color: #fff;
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 15px;
+	padding-bottom: 60px;
 }
 
 #deviant img {
 	margin-top: 50px;
+}
+
+#showcase2 h1,
+#showcase3 h1 {
+	margin-top: 20px;
+	font-size: 55px;
 }
 
 #showcase h1,
@@ -229,12 +267,44 @@ header a:hover {
 	width: 90px;
 }
 
+/***************ABOUT PAGE*****************/
+
+ul.about li p {
+	margin-left: 10px;
+}
+
+/**************QUICK NAV ON ABOUT PAGE********/
+
+ol li {
+	list-style: circle;
+}
+
+ol li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+div.quick-nav{
+	width: 200px;
+}
+
 /*************SIDEBAR ON ABOUT PAGE************/
 
 aside#sidebar {
 	float: right;
 	width: 30%;
 	margin-top: 50px;
+}
+
+/*************MAIN-COL ON ABOUT PAGE*************/
+
+article#main-col {
+	float: left;
+	width: 65%;
+}
+
+section.skills {
+	margin-left: 30px;
 }
 
 /*************SIDEBAR ON CONTACT PAGE*********/
@@ -249,14 +319,16 @@ aside#sidebar div {
 	margin-bottom: 15px;
 }
 
-/*************MAIN-COL ON ABOUT PAGE*************/
+/************CONTACT*******************/
 
-article#main-col {
-	float: left;
-	width: 65%;
+a.github {
+	text-decoration: none;
+	color: #e8491d;
 }
 
-/************CONTACT*******************/
+a.github:hover {
+	color: #20B2AA;
+}
 
 ul#services li {
 	list-style: none;
@@ -266,6 +338,60 @@ ul#services li {
 	background: #e6e6e6;
 }
 
+ul.contact-info {
+	margin-top: 30px;
+}
+
+.contact-info a {
+	font-size: .95em;
+	font-weight: bold;
+	color: #e8491d;
+	text-transform: uppercase;
+}
+
+.contact-info a:hover {
+	color: #20B2AA;
+}
+
+.contact-info {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 1.2em;
+}
+
+.contact-info li {
+	margin-bottom: 30px;
+}
+
+.contact-info a {
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 10px 40px 0 10px;
+}
+
+.contact-info li a{
+	text-decoration: none;
+}
+
+.contact-info li.phone a{
+  background-image: url('../alt_img/phone.png');
+  background-size: 30px;
+}
+
+.contact-info li.mail a{
+  background-image: url('../alt_img/mail.png');
+  background-size: 30px;
+}
+
+
+.contact-info li.twitter a{
+  background-image: url('../alt_img/twitter.png');
+  background-size: 30px;
+}
 
 /*************FOOTER*****************/
 
@@ -319,15 +445,22 @@ footer.alt-footer {
 		margin-bottom: 5px;
 	}
 
+	div.box,
 	div.box img,
 	div.box h3,
 	div.box p {
-		width: 90%;
+		width: 80%;
 		margin: auto;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	div.box p {
 		padding-bottom: 25px;
+	}
+
+	.contact-info li a {
+		text-align: left;
 	}
 
 }
@@ -343,7 +476,13 @@ footer.alt-footer {
 
 @media screen and (max-width: 480px) {
 	
+	aside#sidebar {
+		display:none;
+	}
+
 	#showcase h1,
+	#showcase2 h1,
+	#showcase3 h1,
 	#design h1,
 	#graphic h1,
 	#illustration h1,
@@ -353,14 +492,15 @@ footer.alt-footer {
 
 	.menu-trigger {
 		display: block;
-		color: #fff;
-		padding: 10px;
+		color: #e8491d;
+		font-weight: bold;
+		padding: 10px 10px 0 10px;
 		text-align: right;
 		cursor: pointer;
 		text-transform: uppercase;
-		font-size: 16px;
+		font-size: 18px;
 	}
-	
+
 	nav.nav-menu {
 		display: none;
 	}
@@ -373,20 +513,37 @@ footer.alt-footer {
 		text-align: center;
 		display: block;
 		float: none;
-		border-bottom: 2px solid #d5dce4;
 	}
 	
-	nav.nav-menu ul li:last-child {
-		border-bottom: none;
-	}
-
 	nav.nav-menu {
 		width: 90%;
 	}
 
 }
 
+@media screen and (max-width: 380px) {
 
+	.contact-info li a {
+		text-transform: lowercase;
+		width: 100%;
+		text-align: left;
+		margin: auto;
+	}
+
+	.contact-info li.phone a{
+  		background-image: none;
+	}
+
+	.contact-info li.mail a{
+  		background-image: none;
+	}
+
+
+	.contact-info li.twitter a{
+  		background-image: none;
+	}
+
+}
 
 
 .clearfix:before, .clearfix:after { content: ""; display: table; }
