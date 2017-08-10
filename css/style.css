@@ -319,7 +319,19 @@ footer.alt-footer {
 		margin-bottom: 5px;
 	}
 
+	div.box img,
+	div.box h3,
+	div.box p {
+		width: 90%;
+		margin: auto;
+	}
+
+	div.box p {
+		padding-bottom: 25px;
+	}
+
 }
+
 
 
 
