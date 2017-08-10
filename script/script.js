@@ -1,6 +1,5 @@
 
-
-//This code is for the responsive navigation menu for smaller screens
+//Responsive navigation menu for smaller screens
 
 $(document).ready(function() {
 		

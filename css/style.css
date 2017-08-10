@@ -6,7 +6,11 @@ body {
 }
 
 #branding h1,
-#showcase h1 {
+#showcase h1,
+#design h1,
+#graphic h1,
+#illustration h1,
+#deviant h1 {
 	font-family: 'Cinzel Decorative', cursive;
 }
 
@@ -91,22 +95,97 @@ header a:hover {
 	font-weight: bold;
 }
 
-/************SHOWCASE**********/
+/************SHOWCASE AND DESIGN*************/
 
 #showcase {
 	min-height: 400px;
-	background: url('../img/GoldHeaderOnBlack.png') no-repeat center -450px;
+	background: linear-gradient(
+				rgba(0,0,0, .45),
+				rgba(0,0,0, .45)
+				),
+				url('../img/GoldHeaderOnBlack.png') no-repeat center -350px;
+	background-attachment: fixed;
 	text-align: center;
 	color: #fff;
 }
 
-#showcase h1 {
+#design {
+	min-height: 400px;
+	background: linear-gradient(
+				rgba(0,0,0, .45),
+				rgba(0,0,0, .45)
+				),
+				url('../alt_img/OctopusSmoke.jpg') no-repeat center center;
+	background-attachment: fixed;
+	text-align: center;
+	color: #fff;
+	background-size: cover;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#graphic {
+	min-height: 400px;
+	background: linear-gradient(
+				rgba(0,0,0, .45),
+				rgba(0,0,0, .45)
+				),
+				url('../img/GoldHeaderOnBlack.png') no-repeat center center;
+	background-attachment: fixed;
+	text-align: center;
+	color: #fff;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#illustration {
+	min-height: 400px;
+	background: linear-gradient(
+				rgba(0,0,0, .45),
+				rgba(0,0,0, .45)
+				),
+				url('../img/Poses.jpg') no-repeat center center;
+	background-attachment: fixed;
+	text-align: center;
+	color: #fff;
+	background-size: cover;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#deviant {
+	min-height: 650px;
+	background: linear-gradient(
+				rgba(0,0,0, .45),
+				rgba(0,0,0, .45)
+				),
+				url('../alt_img/OctopusGold.png') no-repeat center -350px;
+	background-attachment: fixed;
+	text-align: center;
+	color: #fff;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+#deviant img {
+	margin-top: 50px;
+}
+
+#showcase h1,
+#design h1,
+#graphic h1,
+#illustration h1,
+#deviant h1 {
 	margin-top: 100px;
 	font-size: 55px;
 	margin-bottom: 10px;
 }
 
-#showcase p {
+#showcase p, 
+#design p,
+#graphic p,
+#illustration p,
+#deviant p {
 	font-size: 20px;
 }
 
@@ -136,7 +215,7 @@ header a:hover {
 /**************BOXES***************/
 
 #boxes {
-	margin-top: 20px;
+	margin-top: 70px;
 }
 
 #boxes .box {
@@ -155,7 +234,7 @@ header a:hover {
 aside#sidebar {
 	float: right;
 	width: 30%;
-	margin-top: 10px;
+	margin-top: 50px;
 }
 
 /*************SIDEBAR ON CONTACT PAGE*********/
@@ -192,10 +271,14 @@ ul#services li {
 
 footer {
 	padding: 20px;
-	margin-top: 20px;
+	margin-top: 0px;
 	color: #fff;
 	background-color: rgba(0,0,0, .9);
 	text-align: center;
+}
+
+footer.alt-footer {
+	margin-top: 70px;
 }
 
 /****************MEDIA QUERIES*********/
@@ -238,6 +321,8 @@ footer {
 
 }
 
+
+
 /****************RESPONSIVE NAV MENU*************/
 
 .menu-trigger {
@@ -246,7 +331,11 @@ footer {
 
 @media screen and (max-width: 480px) {
 	
-	#showcase h1 {
+	#showcase h1,
+	#design h1,
+	#graphic h1,
+	#illustration h1,
+	#deviant h1 {
 		font-size: 30px;
 	}
 
