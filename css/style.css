@@ -463,6 +463,38 @@ footer.alt-footer {
 		text-align: left;
 	}
 
+	/******************@MEDIA FOR IMAGES***************/
+
+	#showcase2 {
+	min-height: 400px;
+	background: linear-gradient(
+				rgba(0,0,0, .45),
+				rgba(0,0,0, .45)
+				),
+				url('../img/hero.jpg') no-repeat center center;
+	background-attachment: fixed;
+	text-align: center;
+	color: #fff;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	}
+
+	#showcase3 {
+	min-height: 400px;
+	background: linear-gradient(
+				rgba(0,0,0, .45),
+				rgba(0,0,0, .45)
+				),
+				url('../img/OneEye.jpg') no-repeat center center;
+	background-attachment: fixed;
+	text-align: center;
+	color: #fff;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 }
 
 
@@ -519,6 +551,38 @@ footer.alt-footer {
 		width: 90%;
 	}
 
+	/*************************@MEDIA FOR IMAGES**************/
+
+	#showcase2 {
+	min-height: 275px;
+	background: linear-gradient(
+				rgba(0,0,0, .45),
+				rgba(0,0,0, .45)
+				),
+				url('../img/hero.jpg') no-repeat center 50px;
+	background-attachment: fixed;
+	text-align: center;
+	color: #fff;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	}
+
+	#showcase3 {
+	min-height: 275px;
+	background: linear-gradient(
+				rgba(0,0,0, .45),
+				rgba(0,0,0, .45)
+				),
+				url('../img/OneEye.jpg') no-repeat center center;
+	background-attachment: fixed;
+	text-align: center;
+	color: #fff;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
 }
 
 @media screen and (max-width: 380px) {
@@ -527,20 +591,7 @@ footer.alt-footer {
 		text-transform: lowercase;
 		width: 100%;
 		text-align: left;
-		margin: auto;
-	}
-
-	.contact-info li.phone a{
-  		background-image: none;
-	}
-
-	.contact-info li.mail a{
-  		background-image: none;
-	}
-
-
-	.contact-info li.twitter a{
-  		background-image: none;
+		margin-left: auto;
 	}
 
 }
