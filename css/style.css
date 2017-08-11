@@ -559,7 +559,7 @@ footer.alt-footer {
 				rgba(0,0,0, .45),
 				rgba(0,0,0, .45)
 				),
-				url('../img/hero.jpg') no-repeat center 50px;
+				url('../img/hero.jpg') no-repeat center center;
 	background-attachment: fixed;
 	text-align: center;
 	color: #fff;
