@@ -275,6 +275,10 @@ ul.about li p {
 
 /**************QUICK NAV ON ABOUT PAGE********/
 
+ol {
+	padding-left: 10px;
+}
+
 ol li {
 	list-style: circle;
 }
